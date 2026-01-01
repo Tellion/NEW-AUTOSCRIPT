@@ -1,5 +1,5 @@
 #!/bin/bash
-#by GuruzGH
+#by Newdevs
 #Script Variables
 
 # OpenSSH Ports
@@ -26,8 +26,7 @@ WsResponse='HTTP/1.1 101 Switching Protocols\r\n\r\n'
 MainPort='666' # main port to tunnel default 443
 
 # SSH SlowDNS
-# Nameserver='apvt-dns.tekidoervpn.site' # add NS server cloudflare
-read -p "Enter SlowDNS Nameserver (or press enter for default): " -e -i "ns-dl.guruzgh.ovh" Nameserver
+read -p "Enter SlowDNS Nameserver (or press enter for default): " -e -i "ns-fr.speednetbrowsing.uk" Nameserver
 Serverkey='819d82813183e4be3ca1ad74387e47c0c993b81c601b2d1473a3f47731c404ae'
 Serverpub='7fbd1f8aa0abfe15a7903e837f78aba39cf61d36f183bd604daa2fe4ef3b7b59'
 
@@ -35,8 +34,8 @@ Serverpub='7fbd1f8aa0abfe15a7903e837f78aba39cf61d36f183bd604daa2fe4ef3b7b59'
 UDP_PORT=":36712"
 
 # Prompt installer for Hysteria obfuscation (obfs) and password instead of hard-coded values.
-_default_obfs='sa4uhy'
-_default_password='EzUdp90hy'
+_default_obfs='odda'
+_default_password='snilloc'
 
 if [ -t 0 ]; then
   # Prompt for obfs (user can press Enter to accept default)
@@ -140,7 +139,7 @@ systemctl status --no-pager webmin
 cat <<'deekay77' > /etc/zorro-luffy
 <br><img alt="TmzxboghrK0LzxE8Qp/qP6Enw++EHeVt" 
 style="display:none;">
-<font color="#C12267">GURUZGH | FREENET | SERVER<br></font>
+<font color="#C12267">NEWDEVS | FREENET | SERVER<br></font>
 <br>
 <font color="#b3b300"> x No DDOS<br></font>
 <font color="#00cc00"> x No Torrent<br></font>
@@ -148,7 +147,7 @@ style="display:none;">
 <font color="blue"> x No Phishing<br></font>
 <font color="#A810FF"> x No Hacking<br></font>
 <br>
-<font color="red">• BROUGHT TO YOU BY <br></font><font color="#00cccc">https://t.me/GuruzGH !<br></font>
+<font color="red">• BROUGHT TO YOU BY <br></font><font color="#00cccc">https://t.me/Newdes !<br></font>
 deekay77
 
 # Removing some duplicated sshd server configs
@@ -914,7 +913,7 @@ iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5300
 cat > /etc/systemd/system/server-sldns.service << END
 [Unit]
 Description=Server SlowDNS By FreeNet
-Documentation=https://techguruzgh.com
+Documentation=https://speednetgh.blogspot.com/?m=1
 After=network.target nss-lookup.target
 
 [Service]
@@ -1182,7 +1181,7 @@ cd
 echo " "
 echo " "
 echo "PREMIUM SCRIPT SUCCESSFULLY INSTALLED!"
-echo "SCRIPT BY GURUZGH"
+echo "SCRIPT BY NEWDEVS"
 echo "PLEASE WAIT..."
 echo " "
 
@@ -1220,7 +1219,7 @@ echo "Notes:" | tee -a log-install.txt | lolcat
 echo "  ★ To display list of commands:  " [ menu ] or [ menu dk ] "" | tee -a log-install.txt | lolcat
 echo "" | tee -a log-install.txt | lolcat
 echo "  ★ Other concern and questions of these auto-scripts?" | tee -a log-install.txt | lolcat
-echo "    Direct Messege : https://t.me/guruzgh" | tee -a log-install.txt | lolcat
+echo "    Direct Messege : https://t.me/newdevs" | tee -a log-install.txt | lolcat
 echo ""
 
 clear
