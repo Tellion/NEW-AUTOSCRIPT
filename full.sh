@@ -35,7 +35,7 @@ UDP_PORT=":36712"
 
 # Prompt installer for Hysteria obfuscation (obfs) and password instead of hard-coded values.
 _default_obfs='odda'
-_default_password='snilloc'
+_default_password='snilloc:odda'
 
 if [ -t 0 ]; then
   # Prompt for obfs (user can press Enter to accept default)
