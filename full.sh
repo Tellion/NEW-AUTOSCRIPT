@@ -148,7 +148,7 @@ style="display:none;">
 <font color="#A810FF"> x No Hacking<br></font>
 <br>
 <font color="red">• BROUGHT TO YOU BY <br></font><font color="#00cccc">https://t.me/Newdes !<br></font>
-newdevs
+deekay77
 
 # Removing some duplicated sshd server configs
 rm -f /etc/ssh/sshd_config
